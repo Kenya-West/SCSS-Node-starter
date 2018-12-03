@@ -26,12 +26,6 @@
     }
 }
 
-@mixin product() {
-    background-color: $accent-color--dark;
-    color: $font-color;
-    border: $border;
-}
-
 @mixin input() {
     background-color: $accent-color--dark;
     color: $font-color;
