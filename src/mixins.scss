@@ -61,6 +61,18 @@
     }
 }
 
+@mixin dropdown-main() {
+    background-color: $accent-color--dark;
+    color: $font-color;
+    border: $border;
+
+    &:hover {
+        background-color: lighten($accent-color--dark, 10%);
+        color: $font-color;
+        border: $border;
+    }
+}
+
 @mixin opacity() {
     opacity: 0.5;
 
