@@ -26,10 +26,16 @@
     }
 }
 
-@mixin input() {
+@mixin input-main() {
     background-color: $accent-color--dark;
     color: $font-color;
     border: solid 3px lighten($accent-color--dark, 10%);
+
+    &:hover {
+        background-color: lighten($accent-color--dark, 10%);
+        color: $font-color;
+        border: solid 3px lighten($accent-color--dark, 20%);
+    }
 }
 
 @mixin button-main() {
