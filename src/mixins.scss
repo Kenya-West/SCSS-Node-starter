@@ -1,7 +1,29 @@
-@mixin general() {
+@mixin general-black() {
     background-color: $bg-color;
     color: $font-color;
     border: $border;
+}
+
+@mixin general-dark() {
+    background-color: $accent-color--dark;
+    color: $font-color;
+    border: $border;
+}
+
+@mixin general-black--hover() {
+    @include general-black();
+
+    &:hover {
+        background-color: $accent-color--light;
+    }
+}
+
+@mixin general-dark--hover() {
+    @include general-dark();
+
+    &:hover {
+        background-color: lighten($accent-color--dark, 10%);
+    }
 }
 
 @mixin product() {
